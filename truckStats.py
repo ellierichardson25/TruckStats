@@ -17,7 +17,7 @@ Edge Cases: start and end year are the same, some end years are smaller
             than some start years, some years occurring multiple times, 
             some years not occurring at all
 
-Big-O runtime: O(nlogn) because of the sorting
+Big-O runtime: O(n)
 
 Big-O memory: O(n) - size of the input
 
@@ -46,7 +46,6 @@ def build_year_map(truck_data, year_map):
 
 
 def get_most(desc_years, length):
-    length = len(desc_years)
     return desc_years[length-1]
 
 
